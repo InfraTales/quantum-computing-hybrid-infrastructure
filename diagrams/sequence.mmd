@@ -1,0 +1,17 @@
+```mermaid
+sequenceDiagram
+    participant User as Researcher
+    participant SDK as Braket SDK
+    participant Braket as AWS Braket
+    participant QPU as Quantum Device
+    participant S3 as S3 Results
+
+    User->>SDK: Define circuit
+    SDK->>Braket: Submit task
+    Braket->>QPU: Queue job
+    QPU->>QPU: Execute circuit
+    QPU-->>Braket: Return measurements
+    Braket->>S3: Store results
+    Braket-->>SDK: Task complete
+    SDK-->>User: Return results
+```

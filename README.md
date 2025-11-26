@@ -1,11 +1,13 @@
-# Quantum Computing Hybrid Infrastructure
+# InfraTales | Quantum Computing – Hybrid Quantum-Classical on AWS Braket
+
+**Production-ready reference architecture for quantum computing with VQE and QAOA algorithms.**
 
 > **Hybrid quantum-classical computing infrastructure using AWS Braket for quantum algorithm experimentation, variational quantum eigensolver (VQE), and quantum approximate optimization (QAOA)**
 
-[![AWS](https://img.shields.io/badge/AWS-Cloud-FF9900?logo=amazon-aws)](https://aws.amazon.com/)
-[![Production Ready](https://img.shields.io/badge/Production-Ready-success)](https://github.com/rahulladumor)
-[![Expert Level](https://img.shields.io/badge/Level-Expert-red)](https://aws.amazon.com)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
+[![AWS](https://img.shields.io/badge/AWS-Cloud-FF9900?logo=amazon-aws)](https://aws.amazon.com/)
+[![Terraform](https://img.shields.io/badge/Terraform-1.5+-purple.svg)](https://terraform.io)
 
 ## 📋 Table of Contents
 
@@ -382,3 +384,10 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for contribution guidelines
 <p align="center">
   Made with ❤️ by Rahul Ladumor
 </p>
+
+<div align="center">
+  <a href="https://infratales.com">Website</a> •
+  <a href="https://infratales.com/projects">Projects</a> •
+  <a href="https://infratales.com/premium">Premium</a> •
+  <a href="https://infratales.com/newsletter">Newsletter</a>
+</div>

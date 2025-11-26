@@ -1,0 +1,35 @@
+```mermaid
+graph LR
+    subgraph Input["Algorithm Input"]
+        Problem[Problem Definition]
+        Params[Parameters]
+    end
+
+    subgraph Classical["Classical Processing"]
+        Encode[Encode Problem]
+        Optimize[Classical Optimizer]
+    end
+
+    subgraph Quantum["Quantum Execution"]
+        Circuit[Quantum Circuit]
+        Execute[QPU Execution]
+        Measure[Measurement]
+    end
+
+    subgraph Output["Results"]
+        Decode[Decode Results]
+        Analyze[Analysis]
+        Solution[Solution]
+    end
+
+    Problem --> Encode
+    Params --> Encode
+    Encode --> Circuit
+    Circuit --> Execute
+    Execute --> Measure
+    Measure --> Decode
+    Decode --> Optimize
+    Optimize --> Encode
+    Decode --> Analyze
+    Analyze --> Solution
+```

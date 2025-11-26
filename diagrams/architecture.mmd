@@ -1,0 +1,38 @@
+```mermaid
+graph TD
+    subgraph Classical["Classical Layer"]
+        Notebook[Jupyter Notebook]
+        Lambda[Lambda Functions]
+        EC2[EC2 Compute]
+    end
+
+    subgraph Braket["AWS Braket"]
+        SDK[Braket SDK]
+        Jobs[Hybrid Jobs]
+        Tasks[Quantum Tasks]
+    end
+
+    subgraph Quantum["Quantum Devices"]
+        Sim[Simulators]
+        IonQ[IonQ]
+        Rigetti[Rigetti]
+        DWave[D-Wave]
+    end
+
+    subgraph Storage["Results"]
+        S3[S3 Bucket]
+        Analysis[Analysis Tools]
+    end
+
+    Notebook --> SDK
+    Lambda --> SDK
+    EC2 --> SDK
+    SDK --> Jobs
+    Jobs --> Tasks
+    Tasks --> Sim
+    Tasks --> IonQ
+    Tasks --> Rigetti
+    Tasks --> DWave
+    Tasks --> S3
+    S3 --> Analysis
+```
